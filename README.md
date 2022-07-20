@@ -2,7 +2,7 @@
 Hi... 
 In this repository I shared my code about ImageProcessing that Iuse in broad casting for Sport
 <br>
-My Instagram is [@artificialintelligenceSIB](https://instagram/artificialintelligenceSIB)
+My Instagram is [@artificialintelligenceSIB](https://instagram.com/artificialintelligenceSIB)
 <br>
 ## Step one:(Convert color image to Gray scale)</b>
 download :"Arman.jpg" & "ColortoGrayCode.py"
