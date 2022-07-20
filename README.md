@@ -29,4 +29,6 @@ cv2.destroyAllWindows()
 - [x] Simple! 
 - [ ] Intermediate!
 - [ ] Hard!
-## Step one:(Convert color image to Gray scale)</b>
+## :blush:Step two:(Convert color image to Gray scale):blush:</b>
+<br>
+
