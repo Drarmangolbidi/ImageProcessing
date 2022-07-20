@@ -18,7 +18,12 @@ You can run py file and see my image color convert to black&white photo
 ![1](https://user-images.githubusercontent.com/109248678/180053645-273b2b13-4565-4145-b3b4-d9c7070cc013.jpg)
 <br>
 ```python
-
+import cv2
+print(cv2.__version__)
+img=cv2.imread("Arman.jpg",cv2.IMREAD_GRAYSCALE)
+cv2.imshow("Arman Golbidi",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 ```
 #### Level :
 - [x] Simple! 
