@@ -8,7 +8,7 @@ videocapture input is "0"
 
 ```python
 import cv2
-myvideo = cv2.VideoCapture('0')
+myvideo = cv2.VideoCapture(0)
 while True:
     ret, frame = myvideo.read() 
     cv2.imshow('myvideo', frame) 
