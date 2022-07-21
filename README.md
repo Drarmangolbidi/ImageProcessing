@@ -52,7 +52,7 @@ cv2.imshow ('mypic', img)
 cv2.waitKey() 
 cv2.destroyWindow('mypic')
 ```
-#### EX1_Leve :
+#### EX2_Leve :
 - [x] Simple! 
 - [ ] Intermediate!
 - [ ] Hard!
@@ -94,6 +94,13 @@ while True:
 myvideo.release() 
 cv2.destroyAllwindows()
 ```
+<br>
+This program has Branch ("https://github.com/Drarmangolbidi/ImageProcessing/tree/3.VideoPlayer_FromWebcam")
+<br>
 
+#### EX3_Leve :
+- [x] Simple! 
+- [ ] Intermediate!
+- [ ] Hard!
 
 
