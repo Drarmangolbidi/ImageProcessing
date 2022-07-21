@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 import cv2
-myvideo = cv2.VideoCapture('ArmanVideo.mp4')
+myvideo = cv2.VideoCapture('0')
 while True:
     ret, frame = myvideo.read() 
     cv2.imshow('myvideo', frame) 
