@@ -80,6 +80,7 @@ Download video: "ArmanVideo.mp4" and code "3.VideoPlayer.py"
 <br>
 Code is :👇
 <br>
+
 ```python
 import cv2
 myvideo = cv2.VideoCapture('ArmanVideo.mp4')
