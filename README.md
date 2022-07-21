@@ -57,7 +57,26 @@ cv2.destroyWindow('mypic')
 - [ ] Intermediate!
 - [ ] Hard!
 
+<br>
+
+## :blush:Step three :(Play video Frame by Frame ):blush:</b>
+<br> 
+Main video is :👇
+<br>
+
+https://user-images.githubusercontent.com/109248678/180224735-830f46c1-4578-4f78-9ab3-8bdc144a3683.mp4
+
+<br>
+In this Program we play video ("ArmanVideo.mp4") with Python.
+<br>
+Like that :👇
+<br>
+<br>
+
+https://user-images.githubusercontent.com/109248678/180222892-4630d87c-29ea-454d-ae1d-c39fab8ccc28.mp4
 
 
-## :blush:Step two:(Drow Line, cycle and rectongel on photo ):blush:</b>
+
+
+
 
