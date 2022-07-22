@@ -215,4 +215,26 @@ cv2.imshow('mypic', img)
 cv2.waitKey() 
 cv2.destroyAllwindows()
 ```
+
 <br>
+
+#### EX4_Leve :
+- [x] Simple! 
+- [ ] Intermediate!
+- [ ] Hard!
+
+
+<br>
+
+## :blush:Step Six :(Resize the picture ):blush:</b>
+
+<br>
+
+When your picture is small or very big you can scale it to normal view . 
+
+<br>
+
+like this example . i resize my picture to small view :
+
+<br>
+
