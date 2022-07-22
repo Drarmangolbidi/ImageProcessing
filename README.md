@@ -287,6 +287,50 @@ https://user-images.githubusercontent.com/109248678/180515930-a9e8e65a-e139-43da
 
 <br>
 
-For use this Program you should download four files:
-- [x] Simple! 
+For use this Program you should download three files:
+
+<br>
+
+- [x] haarcascade_eye.xml
+- [x] haarcascade_frontalface_default.xml
+- [x] 7.viola_jones.py
+
+<br>
+Python code is :👇
+
+<br>
+
+```python
+import cv2
+#font=font = cv2.FONT_HERSHEY_COMPLEX
+font = cv2.FONT_HERSHEY_COMPLEX
+
+face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml') 
+eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
+def detect(gray , frame):
+    faces = face_cascade.detectMultiScale(gray , 1.3, 5) 
+    for (x, y, w, h) in faces:
+        cv2.rectangle(frame , (x, y), (x+w , y+h), (255,0,0), 2) 
+        detected_face = gray[y:y+h , x:x+w] 
+        detected_colored_face = frame[y:y+h, x:x+w] 
+        eyes = eye_cascade.detectMultiScale(detected_face , 1.1, 3) 
+        for (a, b,c,d) in eyes:
+            cv2.rectangle(detected_colored_face, (a,b), (a+c , b+d), (0,255,0), 2)
+    return frame
+
+video_capture = cv2.VideoCapture(0)
+while True:
+    ret , frame = video_capture.read()
+    gray = cv2.cvtColor(frame , cv2.COLOR_BGR2GRAY) 
+    my_output = detect(gray, frame)
+    my_output = cv2.putText(my_output, 'Welcome Arman Golbidi', (100 , 100), font, 1, (0,0,0), 2, cv2.LINE_AA)
+    cv2.imshow ('OUT PUT' , my_output) 
+    if cv2.waitKey(1) & 0xFF == ord('9'):
+        break 
+video_capture.release()
+cv2.destroyAllWindows()
+```
+
+<br>
+
 
