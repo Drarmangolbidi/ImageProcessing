@@ -218,7 +218,7 @@ cv2.destroyAllwindows()
 
 <br>
 
-#### EX4_Leve :
+#### EX5_Leve :
 - [x] Simple! 
 - [ ] Intermediate!
 - [ ] Hard!
@@ -238,3 +238,35 @@ like this example . i resize my picture to small view :
 
 <br>
 
+![A5](https://user-images.githubusercontent.com/109248678/180472784-c2076c91-9c24-4c72-bb90-06f1e8c2aaa6.jpg)
+
+<br>
+
+Donloawd "6.ResizePic.py" and "Arman.jpg".
+
+<br>
+
+Python code is :👇
+
+<br>
+
+```python
+import cv2
+img = cv2.imread('Arman.jpg')
+print(img.shape)
+size = (img.shape[1] ,350) 
+output = cv2.resize(img , size , interpolation=cv2.INTER_AREA) 
+cv2.imshow('mypic' ,output) 
+cv2.waitKey(0)
+cv2.destroyAllwindows()
+```
+
+<br>
+
+#### EX6_Leve :
+- [x] Simple! 
+- [ ] Intermediate!
+- [ ] Hard!
+
+
+<br>
