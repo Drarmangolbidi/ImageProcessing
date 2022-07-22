@@ -165,7 +165,7 @@ You can see this out put :
 
 <br>
 
-Python code is :
+Python code is :👇
 
 <br>
 
@@ -188,7 +188,31 @@ cv2.destroyAllwindows()
 
 <br>
 
-## :blush:Step Four :(Text On Picture ):blush:</b>
+## :blush:Step Five :(Crop the picture ):blush:</b>
 
 <br>
 
+If you want to crop the picture like the below output you can use my Code :
+
+<br>
+
+![A4](https://user-images.githubusercontent.com/109248678/180470693-d07ccb28-e343-4fff-a9ea-31c7af6a4608.jpg)
+
+<br>
+
+Download "Arman.jpg" and "CropPic.py".
+
+<br>
+Python code is :👇
+
+<br>
+
+```python
+import cv2
+img = cv2.imread('Arman.jpg')
+img = img[0:400 , 0:350]
+cv2.imshow('mypic', img) 
+cv2.waitKey() 
+cv2.destroyAllwindows()
+```
+<br>
