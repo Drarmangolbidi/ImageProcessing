@@ -3,6 +3,7 @@ Hi...
 In this repository I shared my code about ImageProcessing that Iuse in broad casting for Sport
 <br>
 My Instagram is [@artificialintelligenceSIB](https://instagram.com/artificialintelligenceSIB)
+
 <br>
 ## :blush:Step one:(Convert color image to Gray scale):blush:</b>
 download :"Arman.jpg" & "1.ColortoGrayCode.py"
@@ -31,7 +32,6 @@ cv2.destroyAllWindows()
 - [ ] Hard!
 
 
-
 ## :blush:Step two:(Drow Line, cycle and rectongel on photo ):blush:</b>
 ![2 ArmanGolbidi](https://user-images.githubusercontent.com/109248678/180068468-1fe329a4-8f4d-4287-aa21-5524d0f3cf07.jpg)
 <br>
@@ -56,7 +56,6 @@ cv2.destroyWindow('mypic')
 - [x] Simple! 
 - [ ] Intermediate!
 - [ ] Hard!
-
 <br>
 
 ## :blush:Step three :(Play video Frame by Frame ):blush:</b>
@@ -103,4 +102,34 @@ This program has Branch ("https://github.com/Drarmangolbidi/ImageProcessing/tree
 - [ ] Intermediate!
 - [ ] Hard!
 
+<br>
 
+## :blush:Step Four :(Text On Picture ):blush:</b>
+<br> 
+Download "Arman.jpg" and "4.Text.py".
+<br>
+You can see this out put :
+<br>
+![A3](https://user-images.githubusercontent.com/109248678/180468314-f85cb2f1-5b39-4d99-a747-10064de9fce8.jpg)
+<br>
+Python code is :
+<br>
+```python
+import cv2
+myvideo = cv2.VideoCapture('ArmanVideo.mp4')
+while True:
+    ret, frame = myvideo.read() 
+    cv2.imshow('myvideo', frame) 
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+myvideo.release() 
+cv2.destroyAllwindows()
+```
+<br>
+#### EX4_Leve :
+- [x] Simple! 
+- [ ] Intermediate!
+- [ ] Hard!
+<br>
+## :blush:Step Four :(Text On Picture ):blush:</b>
+<br>
