@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import cv2
-
-
-# In[2]:
-
-
 myvideo = cv2.VideoCapture('ArmanVideo.mp4')
 while True:
     ret, frame = myvideo.read() 
@@ -18,28 +7,3 @@ while True:
         break
 myvideo.release() 
 cv2.destroyAllwindows()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
