@@ -270,3 +270,23 @@ cv2.destroyAllwindows()
 
 
 <br>
+
+## :blush:Step Seven  :(viola_jones algoritm for face and Eye detection ):blush:</b>
+
+<br>
+
+In this code we use "Harr" features and "casdcading" algoritm .
+
+<br>
+
+see it :
+
+<br>
+
+https://user-images.githubusercontent.com/109248678/180515930-a9e8e65a-e139-43da-90c0-125b235a360c.mp4
+
+<br>
+
+For use this Program you should download four files:
+- [x] Simple! 
+
