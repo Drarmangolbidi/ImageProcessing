@@ -333,4 +333,22 @@ cv2.destroyAllWindows()
 
 <br>
 
+#### EX6_Leve :
+- [ ] Simple! 
+- [x] Intermediate!
+- [ ] Hard!
 
+<br>
+
+If you want to detect laught you can use these code to program .
+<br>
+download : 
+[haarcascade_smile.xml](https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_smile.xml)
+```python
+smile_cascade = cv2.CascadeClassifier('haarcascade_smile.xml') 
+        smiles = smile_cascade.detectMultiScale(detected_face , 1.7, 22) 
+        for (sx, sy,sw,sh) in smiles:
+            cv2.rectangle(detected_colored_face, (sx,sy), (sx+sw , sy+sh), (0,0,255), 2)
+
+```
+<br>
