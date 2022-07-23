@@ -410,6 +410,61 @@ for index, current_location in enumerate(all_faces , 1):
 
 <br>
 
-## :blush:Step Nine  :( " hog " algoritm from ML to find and crop the Face in Picture ):blush:</b>
+## :blush:Step Nine  :( " hog " algoritm for live stream to detect full or half face  ):blush:</b>
 
 <br>
+
+In this program we use hog model for face detect and so we use ML .
+
+<br>
+
+See my out put:
+
+<br>
+
+https://user-images.githubusercontent.com/109248678/180612344-f1c7cebf-e36f-4640-890b-0363d872431d.mp4
+
+<br>
+
+If you want to use this program you should download " 10.real time Hog.py " . 
+
+<br>
+<br>
+Python code is :👇
+
+<br>
+
+```python
+import cv2
+stream = cv2.VideoCapture(0)
+all_face_locations = []
+while True:
+    ret , current_frame = stream.read()
+    current_frame_small = cv2.resize(current_frame, (0,0) , fx= 0.25 , fy= 0.25 )
+    all_face_locations = face_recognition.face_locations (current_frame_small , number_of_times_to_upsample=2 , model='hog')
+    
+    for index, current_location in enumerate(all_face_locations):
+        top , right , bottom , left = current_location 
+        top = top*4 
+        right = right*4 
+        bottom = bottom*4 
+        left = left*4
+        
+        print('Founf Face {} at top: {}, right: {}, bottom: {}, left:{}'.format(index+1 , top, right, bottom, left)) 
+        cv2.rectangle(current_frame, (left , top), (right , bottom), (0,0,255),2)
+    cv2.imshow ('web' , current_frame) 
+    if cv2.waitKey(1) & 0xFF ==ord('q'):
+        break
+stream.release() 
+cv2.destroyAllWindows()
+```
+
+<br>
+
+#### EX9_Leve :
+- [ ] Simple! 
+- [x] Intermediate!
+- [ ] Hard!
+
+<br>
+
