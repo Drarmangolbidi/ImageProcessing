@@ -359,4 +359,16 @@ smile_cascade = cv2.CascadeClassifier('haarcascade_smile.xml')
             cv2.rectangle(detected_colored_face, (sx,sy), (sx+sw , sy+sh), (0,0,255), 2)
 
 ```
+
+<br>
+
+## :blush:Step eight  :( " hog " algoritm from ML to find and crop the Face in Picture ):blush:</b>
+
+<br>
+for start this Project you should install new envierment on Anaconda .
+
+<br>
+
+Please download "" file and wrtie command in Anaconda powershell 
+
 <br>
