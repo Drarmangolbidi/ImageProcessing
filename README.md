@@ -403,7 +403,7 @@ for index, current_location in enumerate(all_faces , 1):
 ```
 <br>
 
-#### EX6_Leve :
+#### EX8_Leve :
 - [ ] Simple! 
 - [x] Intermediate!
 - [ ] Hard!
