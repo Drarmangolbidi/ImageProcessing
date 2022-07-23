@@ -5,6 +5,14 @@ In this repository I shared my code about ImageProcessing that Iuse in broad cas
 
 <br>
 
+at first i learn the basic of image Processing and after that you can use "Harr" features and cascade algoritm .
+
+<br>
+
+I try to use Ml and Deep learning like "Hog" or "CNN" to find the face .
+
+<br>?
+
 My Instagram is [@artificialintelligenceSIB](https://instagram.com/artificialintelligenceSIB)
 
 <br>
