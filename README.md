@@ -369,6 +369,10 @@ for start this Project you should install new envierment on Anaconda .
 
 <br>
 
-Please download "" file and wrtie command in Anaconda powershell 
+Please download "8.AnacondaPrivateEn.pdf" file and wrtie command in Anaconda powershell 
+
+<br>
+
+after that you can download "" and "" .
 
 <br>
