@@ -435,7 +435,8 @@ Python code is :👇
 <br>
 
 ```python
-import cv2
+import cv2 
+import face_recognition
 stream = cv2.VideoCapture(0)
 all_face_locations = []
 while True:
@@ -473,6 +474,60 @@ if you want to use Play back you should change these :
 <br>
 
 ![3](https://user-images.githubusercontent.com/109248678/180618172-74c18429-1dc1-40a1-bccb-71f5aa2058fb.jpg)
+
+<br>
+
+## :blush:Step Ten  :( " hog " algoritm for Blur the face  ):blush:</b>
+<br>
+Download "11.BlurfacewithHog".
+<br>
+
+If you want to dont see the face of your audience you can change this code Like below.Python code is :👇
+
+<br>
+
+https://user-images.githubusercontent.com/109248678/180618648-9147b5a0-7535-4d77-8e47-1082611c37c2.mp4
+
+<br>
+
+```python
+import cv2 
+import face_recognition
+stream = cv2.VideoCapture(0)
+all_face_locations = []
+while True:
+    ret , current_frame = stream.read()
+    current_frame_small = cv2.resize(current_frame, (0,0) , fx= 0.25 , fy= 0.25 )
+    all_face_locations = face_recognition.face_locations (current_frame_small , number_of_times_to_upsample=2 , model='hog')
+    
+    for index, current_location in enumerate(all_face_locations):
+        top , right , bottom , left = current_location 
+        top = top*4 
+        right = right*4 
+        bottom = bottom*4 
+        left = left*4
+        
+        print('Founf Face {} at top: {}, right: {}, bottom: {}, left:{}'.format(index+1 , top, right, bottom, left))
+        current_face_image=current_frame[top:bottom,left:right]
+        current_face_image=cv2.GaussianBlur(current_face_image , (99,99) , 30)
+        current_frame[top:bottom,left:right]=current_face_image
+        
+        cv2.rectangle(current_frame, (left , top), (right , bottom), (0,0,255),2)
+    cv2.imshow ('web' , current_frame) 
+    if cv2.waitKey(1) & 0xFF ==ord('q'):
+        break
+stream.release() 
+cv2.destroyAllWindows()
+
+```
+
+<br>
+
+#### EX10_Leve :
+- [ ] Simple! 
+- [x] Intermediate!
+- [ ] Hard!
+
 
 <br>
 
