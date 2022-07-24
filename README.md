@@ -11,7 +11,11 @@ at first i learn the basic of image Processing and after that you can use "Harr"
 
 I try to use Ml and Deep learning like "Hog" or "CNN" to find the face .
 
-<br>?
+<br>
+
+we will continue with kaggle database and find emotional of user. 
+
+<br>
 
 My Instagram is [@artificialintelligenceSIB](https://instagram.com/artificialintelligenceSIB)
 
@@ -478,8 +482,11 @@ if you want to use Play back you should change these :
 <br>
 
 ## :blush:Step Ten  :( " hog " algoritm for Blur the face  ):blush:</b>
+
 <br>
+
 Download "11.BlurfacewithHog".
+
 <br>
 
 If you want to dont see the face of your audience you can change this code Like below.Python code is :👇
@@ -531,4 +538,14 @@ cv2.destroyAllWindows()
 
 <br>
 
+<br>
 
+## :blush:Step Ten  :( use Kaggel database for detect emotional from face  ):blush:</b>
+
+<br>
+
+at first download "facial_expression_model_weights.h5" and "facial_expression_model_structure.json" . 
+
+<br>
+
+and after that download "" for perform it . 
