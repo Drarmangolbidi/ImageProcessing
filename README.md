@@ -547,6 +547,9 @@ cv2.destroyAllWindows()
 at first download "facial_expression_model_weights.h5" and "facial_expression_model_structure.json" . 
 
 <br>
+I Used kaggle site to achive this dataset for my videoprocessing.
+
+<br>
 
 and after that download "12.RealtimeEmotionDetection.py" for perform it .
 
