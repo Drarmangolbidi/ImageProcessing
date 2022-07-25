@@ -734,6 +734,10 @@ In this program u can detect the emotions from Pictures :
 Download the " 13.ImageEmotionDetection.py " and after that download these picture : "pic1.jpg","pic2.jpg","pic3.jpg","pic4.jpg","pic4.jpg","pic5.jpg","pic6.jpg","pic7.jepg"
 
 <br>
+
+![emotionphoto](https://user-images.githubusercontent.com/109248678/180736929-ab4a1def-ed75-4768-b2e0-f693a5305531.jpg)
+
+<br>
 Python code is :👇
 
 <br>
